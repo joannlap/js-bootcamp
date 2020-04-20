@@ -7,6 +7,7 @@
 At the beginning of computing, programming languages where non existence. So programs looked like this:
 
 | 00110001 | 00000000 | 00000000 |
+| ---------| :--------| --------:|
 | 00110001 | 00000001 | 00000001 |
 | 00110011 | 00000001 | 00000010 |
 | 01010001 | 00001011 | 00000010 |
