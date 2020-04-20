@@ -16,3 +16,14 @@ At the beginning of computing, programming languages where non existence. So pro
 | 01000001 | 00000001 | 00000001 |
 | 00010000 | 00000010 | 00000000 |
 | 01100010 | 00000000 | 00000000 |
+
+All these numbers were manually entered. Nowadays, since the rise of different programming languages like Javascript these numbers can be
+written in a much tidier way with more improvements:
+
+let total = 0, count = 1;
+while (count <= 10) {
+    total += count;
+    count += 1;
+}
+console.log(total);
+// -> 55
