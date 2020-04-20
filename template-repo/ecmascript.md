@@ -75,5 +75,5 @@ of the more well known Java of the day.
 
 ### Language Specification
 
-TC39 is the committee that evolves JS. Their primary task is managing the official specification for the language.
-Contrary to some established and frustratingly perpetuated myth, there are not multiple versions of JavaScript in the wild. There's just one JS, the official standard as maintained by TC39 and ECMA.
+TC39 is the committee that evolves JS. Their main task is managing the official specification for the language.
+There are not multiple versions of JavaScript in the wild. There's just one JS, the official standard as maintained by TC39 and ECMA.
