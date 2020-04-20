@@ -38,7 +38,7 @@ those blocks easy to compose.
 
 ## What is Javascript?
 
-Javascript was introduced in 1995 as a way to add programs to webpages in a browser. Ever since the language has been dominated other major
+Javascript was introduced in 1995 as a way to add programs to webpages in a browser. Ever since the language has been dominating other major
 graphical web browsers.
 
 ```javascript
