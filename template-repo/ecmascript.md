@@ -20,6 +20,7 @@ At the beginning of computing, programming languages where non existence. So pro
 All these numbers were manually entered. Nowadays, since the rise of different programming languages like Javascript these numbers can be
 written in a much tidier way with more improvements:
 
+```javascript
 let total = 0, count = 1;
 while (count <= 10) {
     total += count;
@@ -27,3 +28,4 @@ while (count <= 10) {
 }
 console.log(total);
 // -> 55
+```
