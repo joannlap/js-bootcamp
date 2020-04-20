@@ -72,7 +72,7 @@ Currently using ES6 introduced in 2015.
 The name JS was based of marketing shenanigans because this language was originally designed to appeal to Java programmers and the word
 "script" was popular at the time to refer to lightweight programs. Basically JS tried to position its language as a acceptable alternative
 of the more well known Java of the day. 
-*the JavaScript/JS that runs in your browser or in Node.js, is an implementation of the ES2019 standard.
+* the JavaScript/JS that runs in your browser or in Node.js, is an implementation of the ES2019 standard.
 
 
 
