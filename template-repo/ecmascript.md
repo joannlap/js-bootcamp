@@ -51,7 +51,20 @@ graphical web browsers.
  Besides web browsers where Javascript is used, also some databases such as MongoDB use JS as their scripting and query language.
  Node.js provides an environment for programming JS outside of the browser.
 
- ## Code, and what to do with it
-
  
+# ECMAScript versions
+
+ECMAScript is the standard upon which Javascript is based. Its often abbreviated to ES. 
+Beside JS, other languages implement ECMAScript, including:
+
+* Actionscript (Flash scripting language), which is losing popularity since Flash will be
+officially discontinued in 2020.
+* JScript (Microsoft scripting dialect), since at the time JS was only supported by Netscape and
+the browser wars were at their peak, Microsoft had to build its own version for Internet Explorer.
+
+Ecma International is a Swiss standards accosiation who's in charge of defining international standards.
+
+TC39 is the committee that evolves JS.
+Currently using ES6 introduced in 2015.
+
 
