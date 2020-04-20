@@ -1,1 +1,1 @@
-# H1 Introduction to javascript
+# Introduction to javascript
