@@ -63,8 +63,6 @@ officially discontinued in 2020.
 the browser wars were at their peak, Microsoft had to build its own version for Internet Explorer.
 
 Ecma International is a Swiss standards accosiation who's in charge of defining international standards.
-
-TC39 is the committee that evolves JS.
 Currently using ES6 introduced in 2015.
 
 ## You don't know JS yet: Get started
@@ -75,4 +73,7 @@ of the more well known Java of the day.
 * the JavaScript/JS that runs in your browser or in Node.js, is an implementation of the ES2019 standard.
 
 
+### Language Specification
 
+TC39 is the committee that evolves JS. Their primary task is managing the official specification for the language.
+Contrary to some established and frustratingly perpetuated myth, there are not multiple versions of JavaScript in the wild. There's just one JS, the official standard as maintained by TC39 and ECMA.
