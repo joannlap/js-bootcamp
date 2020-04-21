@@ -55,6 +55,8 @@ const arena = calc
 ```
 ### Arrow function
 
+* The arrow comes after the list of parameters and is followed by the function’s body. It expresses something like “this input (the parameters) produces this result (the body)”.
+
 ```javascript
 const calcArea = (radius) => {
     return 3,14 * radius ** 2 
@@ -64,6 +66,20 @@ const area = calcArea(5)
 console.log('area is', area)
 ```
 
-### methods
 
-calling methods with "." notation. A method is an object property with a value set to a function.
+Methods => calling methods with "." notation. A method is an object property with a value set to a function.
+Closure =>  A function that references bindings from local scopes around it is called a closure.
+Recursion => A function that calls itself
+
+```javascript
+function factorial(x) {
+  if (x < 0) return;
+  if (x === 0) return 1;
+  return x * factorial(x - 1);
+}
+factorial(3);
+// 6
+```
+On line 4 the function is actually calling itself again, but with a parameter that is one less than it was called the first time. 
+
+## Higher order functions
