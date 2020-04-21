@@ -77,3 +77,15 @@ of the more well known Java of the day.
 
 TC39 is the committee that evolves JS. Their main task is managing the official specification for the language.
 There are not multiple versions of JavaScript in the wild. There's just one JS, the official standard as maintained by TC39 and ECMA.
+
+* Forwards compatibility means including a new addition to the program wouldn't cause that program to break if it run in an older JS engine. But JS is not forwards-compatible.
+
+* Backwards compatibility means that once something is accepted as valid JS, there will not be a future change to the language that causes that code to become invalid JS. Code written in 1995 should still work today.  The cost of sticking to this principle creates a very high bar to including changing or extending the language; any decision becomes effectively permanent, mistakes and all. Once it's in JS, it can't be taken out because it might break programs.
+
+#### special numbers
+* Infinity and -Infinity that represents the positive and negative infinities. (not mathimatically sound)
+#### strings
+backslash: 
+```javascript
+"This is the first line\nAnd this is the second"
+```
