@@ -88,3 +88,43 @@ There are not multiple versions of JavaScript in the wild. There's just one JS, 
 * The difference in meaning between undefined and null is an accident of JavaScript’s design, and it doesn’t matter most of the time.
 
 * unary operator: an operator that takes only one value/argument for its operation. Ex: i++, --i, typeof.
+
+# JS guidelines
+
+* Use textContent, not innerHTML; textContent is a lot more efficient, and less error-prone than innerHTML.
+
+* Where possible, use the function declaration to define functions over function expressions:
+
+```javascript
+function sum(a, b) {
+  return a + b;
+}
+```
+
+not this:
+```javascript
+let sum = function(a, b) {
+  return a + b;
+}
+```
+
+* When using anonymous functions inside a method that requires a function as a parameter, it is acceptable to use an arrow function to make the code shorter and cleaner.
+
+So instead of this:
+
+```javascript
+const array1 = [1, 2, 3, 4];
+let sum = array.reduce(function(a, b) {
+  return a + b;  
+});
+```
+you can write this:
+
+```javascript
+const array = [1, 2, 3, 4];
+let sum = array.reduce((a, b) =>
+  a + b
+);
+```
+
+
