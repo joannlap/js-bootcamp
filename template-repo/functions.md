@@ -39,7 +39,9 @@ name = local variable (cant acces the variable outside the function) > parameter
 
 ### Returning values
 
-* JS passes a value from a function back to the code that called it by using the return statement. The value to be returned is specified in the return. That value can be a constant value, a variable, or a calculation where the result of the calculation is returned.
+* JS passes a value from a function back to the code that called it by using the return statement. The value to be returned is specified in the return. 
+
+* It can be a constant value, a variable, or a calculation where the result of the calculation is returned.
 
 ```javascript
 function calcArea = function(radius){
