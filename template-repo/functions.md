@@ -66,6 +66,7 @@ const area = calcArea(5)
 console.log('area is', area)
 ```
 
+### Other function notations
 
 * Methods => calling methods with "." notation. A method is an object property with a value set to a function.
 * Closure =>  A function that references bindings from local scopes around it is called a closure.
@@ -83,3 +84,13 @@ factorial(3);
 On line 4 the function is actually calling itself again, but with a parameter that is one less than it was called the first time. 
 
 ## Higher order functions
+
+* Integrated functions => function in a function
+* Higher order function is a function that returns a function or that takes a function as a argument. 
+* Any function that takes a function as an input or sends out a function as an output => HOF
+
+Arrays:
+* map()
+* sort()
+* reduce()
+* filter()
