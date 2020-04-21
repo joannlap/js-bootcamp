@@ -84,8 +84,7 @@ There are not multiple versions of JavaScript in the wild. There's just one JS, 
 
 #### special numbers
 * Infinity and -Infinity that represents the positive and negative infinities. (not mathimatically sound)
-#### strings
-backslash: 
-```javascript
-"This is the first line\nAnd this is the second"
-```
+
+* The difference in meaning between undefined and null is an accident of JavaScript’s design, and it doesn’t matter most of the time.
+
+* unary operator: an operator that takes only one value/argument for its operation. Ex: i++, --i, typeof.
