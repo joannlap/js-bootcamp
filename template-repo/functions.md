@@ -67,9 +67,9 @@ console.log('area is', area)
 ```
 
 
-Methods => calling methods with "." notation. A method is an object property with a value set to a function.
-Closure =>  A function that references bindings from local scopes around it is called a closure.
-Recursion => A function that calls itself
+* Methods => calling methods with "." notation. A method is an object property with a value set to a function.
+* Closure =>  A function that references bindings from local scopes around it is called a closure.
+* Recursion => A function that calls itself
 
 ```javascript
 function factorial(x) {
