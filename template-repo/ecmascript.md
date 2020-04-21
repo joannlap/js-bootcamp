@@ -1,4 +1,4 @@
-#Day 1: ECMAScript
+# Day 1: ECMAScript
 
 ## Introduction to javascript
 
