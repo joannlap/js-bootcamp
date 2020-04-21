@@ -33,13 +33,13 @@ function speak = function(name, time){
 speak('Jenny', 'morning')
 ```
 
-name = local variable (cant acces the variable outside the function) > parameters
-'Jenny' = argument
+name = local variable (cant acces the variable outside the function) => parameters
+'Jenny' = argument => are the values passed into a function
 * the order of the parameters must match the order of the arguments
 
 ### Returning values
 
-* JS passes a value from a function back to the code that called it by using the return statement. The value to be returned is specified in the return. 
+* This is part of the function code. It lets you define what value to send back to the function caller.
 
 * It can be a constant value, a variable, or a calculation where the result of the calculation is returned.
 
@@ -55,4 +55,15 @@ const arena = calc
 ```
 ### Arrow function
 
+```javascript
+const calcArea = (radius) => {
+    return 3,14 * radius ** 2 
+}
 
+const area = calcArea(5)
+console.log('area is', area)
+```
+
+### methods
+
+calling methods with "." notation. A method is an object property with a value set to a function.
