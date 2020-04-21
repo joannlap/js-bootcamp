@@ -129,4 +129,37 @@ let sum = array.reduce((a, b) =>
 );
 ```
 
+### difference between let and const
 
+* let is a block scope unlike var that is a function scope. let > var.
+* const is just like let but you cant
+reassign const. 
+* use const if you find not to make
+adjustments to the variables.
+
+```javascript
+let x = 1
+x = 2
+console.log(x)
+
+2
+```
+
+```javascript
+const x = 1
+x = 3
+console.log(x)
+
+error
+```
+in contrary while using objects:
+
+```javascript
+const x = {
+    y: 5
+}
+x.y = 6
+console.log(6)
+
+{ y: 6}
+```
