@@ -14,10 +14,27 @@ Functions are a way to organize a program.
 //function declaration
 function greet(){
     console.log('Faka');
-}
+};
 
 //function expression
 function speak = function(){
-    console.log('adieu!')
-}
+    console.log('adieu!');
+};
 ```
+### arguments & parameters
+
+* passing values into functions
+
+```javascript
+function speak = function(name, time){
+    console.log('adieu ${name} ${time}!');
+};
+
+speak('Jenny', 'morning')
+```
+
+name = local variable (cant acces the variable outside the function) > parameters
+'Jenny' = argument
+* the order of the parameters must match the order of the arguments
+
+
