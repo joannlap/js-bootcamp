@@ -21,9 +21,9 @@ function speak = function(){
     console.log('adieu!');
 };
 ```
-### arguments & parameters
+### Arguments & parameters
 
-* passing values into functions
+Passing values into functions:
 
 ```javascript
 function speak = function(name, time){
