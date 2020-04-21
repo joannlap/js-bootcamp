@@ -1,8 +1,10 @@
-# Introduction to javascript
+#Day 1: ECMAScript
+
+## Introduction to javascript
 
 * A sense of what a good program looks like is developed in practice, not learned from a list of rules.
 
-## Why language matters
+### Why language matters
 
 At the beginning of computing, programming languages where non existence. So programs looked like this:
 
