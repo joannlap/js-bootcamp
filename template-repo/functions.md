@@ -37,4 +37,17 @@ name = local variable (cant acces the variable outside the function) > parameter
 'Jenny' = argument
 * the order of the parameters must match the order of the arguments
 
+### returning values
+```javascript
+function calcArea = function(radius){
+return 3,14 * radius ** 2 
+};
+
+const area = calcArea(5)
+console.log(area)
+
+const arena = calc
+```
+### arrow function
+
 
