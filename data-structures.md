@@ -39,6 +39,7 @@ Might seem that that the line ($) would cause an error, but the const fixes only
 ** arrays
 
 * A variable stores not the object itself, but its “address in memory”, in other words “a reference” to it.
+
 –––
 * When an object variable is copied – the reference is copied, the object is not duplicated.
 
