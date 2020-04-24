@@ -38,3 +38,25 @@ Might seem that that the line (*) would cause an error, but the const fixes only
 ** number
 ** boolean
 ** arrays
+
+* A variable stores not the object itself, but its “address in memory”, in other words “a reference” to it.
+–––
+* When an object variable is copied – the reference is copied, the object is not duplicated.
+
+For instance:
+
+```javascript
+let user = { name: "John" };
+
+let admin = user; // copy the reference
+```
+---
+* Two objects are equal only if they are the same object.
+
+```javascript 
+let a = {};
+let b = a; // copy the reference
+
+alert( a == b ); // true, both variables reference the same object
+alert( a === b ); // true
+```
