@@ -46,7 +46,7 @@ Might seem that that the line ($) would cause an error, but the const fixes only
 For instance:
 
 ```javascript
-let user = { name: "John" };
+let user = { name: "JoAnnie" };
 
 let admin = user; // copy the reference
 ```
