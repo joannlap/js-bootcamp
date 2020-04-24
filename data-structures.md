@@ -17,7 +17,6 @@ The length property of an array tells us how many elements it has. To find the l
 
 * A way to organize collections of variables and being used conceptually. A way to store properties of a variable in a container.
 * It sets a foundation of working with data that comes from other sources.
-
 * An object declared as const can be changed.
 
 ```javascript
