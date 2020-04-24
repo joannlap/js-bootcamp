@@ -55,6 +55,7 @@ const arena = calc
 ```
 ### Arrow function
 
+* Alternative notation of a function declaration.
 * The arrow comes after the list of parameters and is followed by the function’s body. It expresses something like “this input (the parameters) produces this result (the body)”.
 
 ```javascript
