@@ -26,11 +26,11 @@ const person = {
   lenght: 162
 }
 
-person.age = 22 // (*)
+person.age = 22 // ($)
 
 console.log(person.name)
 ```
-Might seem that that the line //(*) would cause an error, but the const fixes only the value of the person itself. Person stores the reference to the same object all the time. The //(*) goed inside the object, it doesn't reassign person.
+Might seem that that the line ($) would cause an error, but the const fixes only the value of the person itself. Person stores the reference to the same object all the time. The line ($)goes inside the object, it doesn't reassign person.
 
 * Different datatypes can be used for properties for objects:
 ** string
