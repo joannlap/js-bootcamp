@@ -43,3 +43,5 @@ Eventhough the function is called before its written, the code still works. This
 Whenever we have a function defined inside another function, the inner function has access to the variables declared in the outer function. 
 
 ![alt text](https://uploads-ssl.webflow.com/5dc87b3620589749198717e1/5dd5846e5572e43fecce7e79_lets-learn-javascript-closures-1.png "Closures")
+(Kasireddy, 2016
+)
