@@ -9,7 +9,9 @@
 Also a difference between sync and async is that waiting for actions to finish is implicit in the synchronous model, while in the asynchronus model is explicit - under our control. Meaning that the developer has control over what actions can be first executed and when its implicit only the js compiler/system has the control over what actions can be executed.
 
 ## Callbacks
-Since Javascript is a synchronous programming model but is possible to manipulate JS to behave in an asynchronous way, by using async callbacks. Callbacks are functions passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or function. 
+
+Since Javascript is a synchronous programming model, it is possible to manipulate JS to behave in an asynchronous way, by using async callbacks. Callbacks are functions passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or function. 
+* Async code is used to write or complete actions which have different outcomes, where you dont know whether it will be succesful or not. It can simply turn into an error. You are also aware how long it takes when the action is completed.
 
 But then it struck to me that this definition ressembles a lot to higher order functions. So I looked into the difference between callbacks and higher order functions and this is what I concluded: 
  
@@ -46,3 +48,5 @@ console.log(whattup(`Jo-ann`));
 6. After 5 seconds the callback function calls: 'Hi, Jo-Ann dit is van de eerste functie... sorry, but better late than never :'
 
 ## Promises
+
+With a promise, instead of bundling all dependencies into one code block and sending the entire thing off to the browser, we’re able to separate them out.
