@@ -57,6 +57,7 @@ const arena = calc
 
 * Alternative notation of a function declaration.
 * The arrow comes after the list of parameters and is followed by the function’s body. It expresses something like “this input (the parameters) produces this result (the body)”.
+* Arrow functions can only be recalled when its used in a variable.
 
 ```javascript
 const calcArea = (radius) => {
@@ -86,7 +87,7 @@ On line 4 the function is actually calling itself again, but with a parameter th
 
 ## Higher order functions
 
-* Integrated functions => function in a function
+* Integrated/embedded functions => function in a function
 * Higher order function is a function that returns a function or that takes a function as a argument. 
 * Any function that takes a function as an input or sends out a function as an output => HOF
 
@@ -95,3 +96,20 @@ Arrays:
 * sort()
 * reduce()
 * filter()
+
+Example:
+
+```javascript
+function call2(y) {
+    return `${y} jij bent echt lit`;
+}
+
+
+const call = (x) => {
+    console.log(`Hoi, ${x} dit komt van de eerste functie`)
+
+    return call2(x);
+}
+
+console.log(call(`Jo-ann`));
+```
