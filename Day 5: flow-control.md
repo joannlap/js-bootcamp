@@ -12,22 +12,37 @@ Also a difference between sync and async is that waiting for actions to finish i
 Since Javascript is a synchronous programming model but is possible to manipulate JS to behave in an asynchronous way, by using async callbacks. Callbacks are functions passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or function. 
 
 But then it struck to me that this definition ressembles a lot to higher order functions. So I looked into the difference between callbacks and higher order functions and this is what I concluded: 
+ 
+Higher order functions takes another functions as an argument and returns a function to its callers. Callbacks are functions that is passed to another function expecting that the other function will call it. 
+
+Example how async code works:
+We have two functions here, whattup() and whattup2u(). whattup() consist of a console.log() and a setTimeout callback function thats on 5 seconds. The whattup() function returns whattup2u().
+This is an example how JS can manipulate async code what makes JS looking like async programming.
 
 ```javascript
-function call2(y) {
+function whattup2u(y) {
     return `${y} jij bent echt lit`;
 }
 
 
-const call = (x) => {
+const whattup = (x) => {
     console.log(`Hoi, ${x} dit komt van de eerste functie`)
 
     setTimeout(() => { // setTimeout is a synchronous programming model
         console.log(`Hi, ${x} dit is van de eerste functie.. sorry, but better late than never :')`)
     }, 5000);
 
-    return call2(x);
+    return whattup2u(x);
 } 
 
-console.log(call(`Jo-ann`));
+console.log(whattup(`Jo-ann`));
 ```
+
+1. whatsup() gets called
+2. That function prints console.log() tot the terminal
+3. Function calls setTimeout function and executes the callback from the callback after 5 seconds.
+4. whatsup calls whatsup2u in a return. The function has been executed.
+5. whatsup2u() returns "Jo-Ann jij bent echt lit"
+6. After 5 seconds the callback function calls: 'Hi, Jo-Ann dit is van de eerste functie... sorry, but better late than never :'
+
+## Promises
