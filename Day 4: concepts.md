@@ -9,6 +9,8 @@ Local scope => Are only visible within the function they are declared. New local
 turns into a local variable. Meaning variables with the same name can be used in different functions. 
 Block scope => Block statements don't create a new scope and the block scope does not apply to var keyword. Const and let can define scope to block statements. 
 
+### Lexical scope vs Local scope
+
 ## Hoisting
 A general way of thinkng about how execution contexts work in javascript. 
 

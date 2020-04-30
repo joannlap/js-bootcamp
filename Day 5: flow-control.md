@@ -10,7 +10,7 @@ Also a difference between sync and async is that waiting for actions to finish i
 
 ## Callbacks
 
-Since Javascript is a synchronous programming model, it is possible to manipulate JS to behave in an asynchronous way, by using async callbacks. Callbacks are functions passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or function. 
+Since Javascript is a synchronous programming model, it is possible to manipulate JS to behave in an asynchronous way, by using async callbacks. Callbacks are functions passed into another function as parameters, which is then invoked inside the outer function to complete some kind of action or function. 
 * Async code is used to write or complete actions which have different outcomes, where you dont know whether it will be succesful or not. It can simply turn into an error. You are also aware how long it takes when the action is completed.
 
 But then it struck to me that this definition ressembles a lot to higher order functions. So I looked into the difference between callbacks and higher order functions and this is what I concluded: 
@@ -49,4 +49,15 @@ console.log(whattup(`Jo-ann`));
 
 ## Promises
 
-With a promise, instead of bundling all dependencies into one code block and sending the entire thing off to the browser, we’re able to separate them out.
+Instead of bundling all dependecies of callbacks into one code block to send it off to the browser, with promises you can you can prevent these callback hells - calling multiple callbacks in a function. 
+
+Promises are asynchronous actions that may complete at some point and produces a value. They simplify the use of asynchronous functions. The only difference between promise-based functions and regular ones is that the output may not be available yet, it might already be there or might appear at some point in the future. 
+
+```javascript
+let twenty = Promise.resolve(20)
+twenty.then(value => console.log('Got ${value}'))
+// Got 15
+```
+- calling a promise by calling Promise.resolve
+- twenty.then registers a callback function when the promise resolves and produces a value.
+

@@ -1,7 +1,3 @@
-// Only change code below this line
-
-var remainder = 11 % 3;
-
 // counting cards
 var count = 0;
 
