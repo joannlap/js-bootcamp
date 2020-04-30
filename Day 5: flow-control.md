@@ -15,7 +15,7 @@ Since Javascript is a synchronous programming model, it is possible to manipulat
 
 But then it struck to me that this definition ressembles a lot to higher order functions. So I looked into the difference between callbacks and higher order functions and this is what I concluded: 
  
-Higher order functions takes another functions as an argument and returns a function to its callers. Callbacks are functions that is passed to another function expecting that the other function will call it. 
+Higher order functions takes other functions as an argument and returns a function to its callers. Callbacks are functions that is passed to another function expecting that the other function will call it. 
 
 Example how async code works:
 We have two functions here, whattup() and whattup2u(). whattup() consist of a console.log() and a setTimeout callback function thats on 5 seconds. The whattup() function returns whattup2u().
@@ -23,7 +23,7 @@ This is an example how JS can manipulate async code what makes JS looking like a
 
 ```javascript
 function whattup2u(y) {
-    return `${y} jij bent echt lit`;
+    return `${y} ,its lit`;
 }
 
 
@@ -37,14 +37,14 @@ const whattup = (x) => {
     return whattup2u(x);
 } 
 
-console.log(whattup(`Jo-ann`));
+console.log(whattup(`Jo-Ann`));
 ```
 
 1. whatsup() gets called
 2. That function prints console.log() tot the terminal
 3. Function calls setTimeout function and executes the callback from the callback after 5 seconds.
 4. whatsup calls whatsup2u in a return. The function has been executed.
-5. whatsup2u() returns "Jo-Ann jij bent echt lit"
+5. whatsup2u() returns "Jo-Ann, its lit"
 6. After 5 seconds the callback function calls: 'Hi, Jo-Ann dit is van de eerste functie... sorry, but better late than never :'
 
 ## Promises
