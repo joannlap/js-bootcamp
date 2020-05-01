@@ -27,7 +27,7 @@ function chainToSwitch(val) {
 }
 
 chainToSwitch(7);
-}
+
 
 //Record collection.
 

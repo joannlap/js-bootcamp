@@ -1,5 +1,10 @@
 # Day 2: Functions
 
+Three fundaments for creating a function:
+- Arguments: are the values passed into the function.
+- Function code: the code inside the curly braces where you define what the function does. 
+- Return value: lets you define what value to send back to the caller. 
+
 Functions are a way to organize a program.
 * P5 = functions library
 
